@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title TopSoft Inc
+		link(rel="stylesheet" href="/css/css_bootsrap/bootstrap.min.css")
+		link(rel="stylesheet" href="/css/style.css")
+	body
+		.container
+			.row
+				.col
+					form(action="/index" method="post")
+						fieldset
+							legend Employee Data
+							.form-row
+								.col
+									label(for="") First Name
+									input#fname.form-control(type="text" placeholder="" name="fname")
+								.col
+									label(for="") Last Name
+									input#lname.form-control(type="text" placeholder="" name="lname")
+							.form-row
+								.col
+									label(for="") Start Date
+									input#reg_fname.form-control(type="date" placeholder="" name="sDate")
+								.col
+									label(for="") Designation
+									input#reg_fname.form-control(type="text" placeholder="")
+							.form-row
+								.col
+									label(for="")
+										| Role
+									select(name="right" id="")
+										option(value="") Admin
+										option(value="") Developer
+								.col
+									label(for="") Status
+									input#status.form-control(type="text" placeholder="")
+							.form-row
+								.col
+									label(for="") Status
+									input#reg_fname.form-control(type="text" placeholder="")
+								.col
+									label(for="") Status
+									input#reg_fname.form-control(type="text" placeholder="")
+							.form-row
+								.col
+									input(type="Submit" value="Submit")
